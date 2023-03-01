@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <div class="play-now-title"></div>
+      <div class="time-length"></div>
+      <progress max="100" value="0" class="progress-audio"></progress>
+      <ul class="play-list"></ul>
+    </div>
+
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+
+    <div class="wrap__other">
+      <div class="greetingBTN">
+        <div class="title-cat">Welcome</div>
+      </div>
+      <div class="playerBTN">
+        <div class="title-cat">Music</div>
+      </div>
+      <div class="WeatherBTN">
+        <div class="title-cat">Weather</div>
+      </div>
+      <div class="quotesBTN">
+        <div class="title-cat">Quotes</div>
+      </div>
+      <div class="dateBTN">
+        <div class="title-cat">Calendar</div>
+      </div>
+
+      <div class="todo">
+        <div class="title-cat">ToDo</div>
+      </div>
+      <div class="settings">
+        <div class="title-cat">Settings</div>
+      </div>
+      <!-- <div class="lang">
+        <div class="title-cat">language</div>
+      </div> -->
+    </div>
+
+    <div class="datatime">
+      <time class="time"></time>
+      <date class="date"></date>
+    </div>
+
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" />
+    </div>
+  </main>
+
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div class="footer-content">
+
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+  <!-- Начало модального окна-->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Settings</h3>
+
+      <br>
+      <hr>
+      <div class="language">
+        <br>
+        <h4>Language</h4>
+        <div>
+          <input type="radio" id="ru" name="lang" value="langRus">
+          <label for="langChoice">Русский</label>
+          <input type="radio" id="en" name="lang" value="langEn">
+          <label for="langChoice">English</label>
+        </div>
+        <br>
+        <hr>
+      </div>
+      <div class="language">
+        <br>
+        <h4>Image source</h4>
+        <div>
+          <input type="radio" id="GitHub" name="imageSource" value="GitHub">
+          <label for="imageSourceChoice">GitHub</label>
+          <input type="radio" id="Unsplash" name="imageSource" value="Unsplash">
+          <label for="imageSourceChoice">Unsplash API</label>
+          <input type="radio" id="Flickr" name="imageSource" value="Flickr">
+          <label for="imageSourceChoice">Flickr API</label>
+        </div>
+        <input type="text" class="tags" placeholder="enter tags" />
+
+        <br>
+        <br>
+        <hr>
+      </div>
+
+      <div class="showHideBlock">
+        <br>
+        <h4>Show widget</h4>
+        <div>
+
+          <div>Player - <button>hide</button></div>
+          <div>Weather - <button>hide</button></div>
+          <div>Quotes - <button>show</button></div>
+          <div>Date - <button>show</button></div>
+          <div>Time - <button>show</button></div>
+          <div>Greeting - <button>show</button></div>
+          <div>Todo - <button>show</button></div>
+
+
+        </div>
+        <br>
+        <hr>
+      </div>
+
+      <p>скрытие и отображение блоков происходит плавно, не влияя на другие элементы, которые находятся на странице,
+        или плавно смещая их +3</p>
+      <p>настройки приложения сохраняются при перезагрузке страницы +5</p>
+    </div>
+  </div>
+
+  <!-- Конец модального окна -->
+
+  <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
